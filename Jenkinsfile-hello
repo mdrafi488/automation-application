@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checkout Page'
+            }
+        }
+        stage('CI') {
+            steps {
+                echo 'CI Page'
+            }
+        }
+        stage('CD') {
+            steps {
+                echo 'CD Page'
+            }
+        }
+    }
+}
